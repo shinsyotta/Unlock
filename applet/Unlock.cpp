@@ -10,6 +10,9 @@
 #define WIRELESS_MODE_ADHOC	2
 
 // Wireless configuration parameters ----------------------------------------
+#include "WProgram.h"
+void setup();
+void loop();
 unsigned char local_ip[] = {192,168,2,149};	// IP address of WiShield
 unsigned char gateway_ip[] = {192,168,2,1};	// router or gateway IP address
 unsigned char subnet_mask[] = {255,255,255,0};	// subnet mask for the local network
@@ -58,3 +61,16 @@ void loop()
                                    // the serial port
 
 }
+
+int main(void)
+{
+	init();
+
+	setup();
+    
+	for (;;)
+		loop();
+        
+	return 0;
+}
+

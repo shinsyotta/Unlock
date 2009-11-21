@@ -1,0 +1,3 @@
+Basically at this point I'm just hacking on the Webserver example for Arduino WiShield.
+
+The objective of this project is to create a door lock that can be controlled from the web.  This could lead to users unlocking the door via Facebook Connect, etc.
